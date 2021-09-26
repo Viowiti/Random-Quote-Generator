@@ -1,27 +1,39 @@
 const quota = [
-    "Part of the journey is the end",
-    "Tony, trying to get you to stop has been one of the few failures of my entire life.",
-    "No amount of money ever bought a second of time.",
-    "You know, I keep telling everybody they should move on and grow. Some do. But not us.",
-    "It's not about how much we lost. It's about how much we have left.",
-    "No mistakes. No do-overs. Look out for each other. This is the fight of our lives.",
-    "The hardest choices require the strongest wills.",
-    "Today we don’t fight for one life, we fight for all of them.",
-    "It’s not enough to be against something. You have to be for something better.",
-    "I would rather be a good man than a great king.",
-    "I choose to run towards my problems, and not away from them. Because’s that–because’s that what heroes do.",
-    "But a thing isn’t beautiful because it lasts. It’s a privilege to be among them.",
-    "The world has changed and none of us can go back. All we can do is our best, and sometimes the best that we can do is to start over.",
-    "Faith is my sword. Truth is my shield. Knowledge my armor.",
-    "I had my eyes opened. I came to realize that I had more to offer this world than just making things that blow up.",
-    "No man can win every battle, but no man should fall without a struggle.",
-    "No man can win every battle, but no man should fall without a struggle.",
-    "I can do this all day.",
-    "There’s no throne, there is no version of this, where you come out on top. Maybe your army comes and maybe it’s too much for us, but it’s all on you. Because if we can’t protect the Earth, you can be damned well sure we’ll avenge it."
+    '"We all know the truth: But in times of crisis, the wise build bridges, while the foolish build barriers." ...Tchala',
+    '"Don\'t waste it. Don\'t waste your life." ... Ho Yinsen',
+    '"Whatever happens tomorrow, you must promise me one thing. That you will stay who you are, not a perfect soldier, but a good man."-Dr. Abraham Erskine',
+    '"I know you were only doing what you believe in, and that\'s all any of us can do, it\'s all any of us should."- Captain America',
+    '" You never know. You hope for the best and make do with what you get." -Nick Fury',
+    '"At some point, we all have to choose, between what the world wants you to be, and who you are." -Natasha Romanoff',
+    '"The world has changed and none of us can go back. All we can do is our best, and sometimes the best that we can do is to start over." - Peggy Carter',
+    '"Compromise where you can. Where you can\'t, don\'t. - Peggy Carter',
+    '"Just bury me in the ocean with my ancestors that jumped from the ships, because they knew death was better than bondage." - Erk Killmonger',
+    '"No man can win every battle, but no man should fall without a struggle." - Peter Parker',
+    '"With great power comes great responsibility." -Stan Lee',
+    '"If we can\'t protect the earth, you can be damn well sure we\'ll avenge it!" - Tony Stark',
+    '"If we can\'t accept limitations, then we\'re no better than the bad guys." - Tony Stark',
+    '“Part of the journey is the end.” - Tony stark',
+    '“He may have been your father, boy, but he wasn’t your daddy.” - Yondu',
+    '“Uneasy lies the head that wears the crown" - Nick Fury',
+    '“I don\'t know if you\'ve been in a fight before but there\'s usually not this much talking.” - Sam Wilson',
+    '“Anybody on our side hiding any shocking and fantastic abilities they’d like to disclose? I’m open to suggestions.” - Tony Stark',
+    '“Ah, she left me. And my mom died too. And my dad got deported. But I got the van!” - Scot Lang',
+    '“Finger on throat means death! Metaphor!” - Drax',
+    '“Before we get started, does anyone want to get out?” -Steve Rodgers',
+    '“Puny god.” -Hulk',
+    '“There’s only one God, ma’am, and I’m pretty sure he doesn’t dress like that.” -Steve Rodgers',
+    '“You call me ‘young lady\' again, I\'ll shove my foot up somewhere it\'s not supposed to be.” -Maria Rambeau',
+    '“He just kicked your ass, full-size. You really want to find out what it\'s like when you can\'t see him coming?” -Howard Stark',
+    '“You get hurt, hurt \'em back. You get killed… walk it off.” -Captain America',
+    '“That’s my secret, Captain. I’m always angry.” -Bruce Banner',
+    '“He will be the first in a new breed of super-soldiers. And they will personally escort Adolf Hitler to the gates of Hell.” -Colonel Philips'
 ];
-console.log(quota.length)
+
 
 function getQuote(){
-    let i = Math.floor(Math.random() * 20);
+    let i = Math.floor(Math.random() * 27);
     document.getElementById("newQuoteSection").innerHTML = quota[i];
 }
+
+let thisYear = new Date().getFullYear();
+document.getElementById("copyright").innerHTML = "Copyright " + thisYear;
